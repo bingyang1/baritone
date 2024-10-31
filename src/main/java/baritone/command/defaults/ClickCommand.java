@@ -46,13 +46,13 @@ public class ClickCommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "Open click";
+        return "开始点击";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "Opens click dude",
+                "开始点击",
                 "",
                 "Usage:",
                 "> click"
