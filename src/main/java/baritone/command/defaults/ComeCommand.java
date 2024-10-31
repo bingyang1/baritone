@@ -47,15 +47,15 @@ public class ComeCommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "Start heading towards your camera";
+        return "以摄像机位置设置目标并直接接近目标";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The come command tells Baritone to head towards your camera.",
+                "这个 come 命令 告诉 Baritone 朝你的相机走去.需配合 灵魂出窍 工具或者类似模组的类似效果",
                 "",
-                "This can be useful in hacked clients where freecam doesn't move your player position.",
+                "这在被黑客攻击的客户端中很有用，因为freecam不会移动你的玩家位置。",
                 "",
                 "Usage:",
                 "> come"
