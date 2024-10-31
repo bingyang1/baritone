@@ -196,19 +196,19 @@ public class ElytraCommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "elytra time";
+        return "鞘翅时间";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The elytra command tells baritone to, in the nether, automatically fly to the current goal.",
+                "这个 elytra 命令 告诉 baritone 允许在下届使用鞘翅.",
                 "",
                 "Usage:",
-                "> elytra - fly to the current goal",
-                "> elytra reset - Resets the state of the process, but will try to keep flying to the same goal.",
-                "> elytra repack - Queues all of the chunks in render distance to be given to the native library.",
-                "> elytra supported - Tells you if baritone ships a native library that is compatible with your PC."
+                "> elytra - 使用鞘翅寻路",
+                "> elytra reset - 重置状态，但是仍然会保持飞向目标.",
+                "> elytra repack - 将所有加载的区块保存至本地库.",
+                "> elytra supported - 检查是你的设备否支持该功能."
         );
     }
 
@@ -216,9 +216,7 @@ public class ElytraCommand extends Command {
         final String osArch = System.getProperty("os.arch");
         final String osName = System.getProperty("os.name");
         return String.format(
-                "Legacy architectures are not supported. Your CPU is %s and your operating system is %s. " +
-                        "Supported architectures are 64 bit x86, and 64 bit ARM. Supported operating systems are Windows, " +
-                        "Linux, and Mac",
+               "不支持旧体系结构。您的CPU是%s，操作系统是%s。仅支持x86_64 or ARM64的Windows、Linux和Mac”,
                 osArch, osName
         );
     }
