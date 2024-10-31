@@ -98,15 +98,15 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Pauses Baritone until you use resume";
+                return "暂停 Baritone ，直到你使用resume命令";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The pause command tells Baritone to temporarily stop whatever it's doing.",
+                        "这个 pause 命令 告诉 Baritone 暂时停止它正在做的事情.",
                         "",
-                        "This can be used to pause pathing, building, following, whatever. A single use of the resume command will start it right back up again!",
+                        "这可用于暂停路径、构建、跟踪等。只需使用一次resume命令，它就会重新启动！",
                         "",
                         "Usage:",
                         "> pause"
@@ -132,13 +132,13 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Resumes Baritone after a pause";
+                return "恢复 Baritone 之前暂停的任务";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The resume command tells Baritone to resume whatever it was doing when you last used pause.",
+                        "这个 resume 命令 告诉 Baritone 继续你上次使用暂停时正在做的事情.",
                         "",
                         "Usage:",
                         "> resume"
@@ -159,13 +159,13 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Tells you if Baritone is paused";
+                return "查询是否有任务被pause暂停";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The paused command tells you if Baritone is currently paused by use of the pause command.",
+                        "paused命令可查询是否有任务被pause暂停.",
                         "",
                         "Usage:",
                         "> paused"
@@ -190,13 +190,13 @@ public class ExecutionControlCommands {
 
             @Override
             public String getShortDesc() {
-                return "Cancel what Baritone is currently doing";
+                return "取消Baritone当前正在进行的操作";
             }
 
             @Override
             public List<String> getLongDesc() {
                 return Arrays.asList(
-                        "The cancel command tells Baritone to stop whatever it's currently doing.",
+                        "cancel命令告诉Baritone停止它目前正在做的任何事情.",
                         "",
                         "Usage:",
                         "> cancel"
