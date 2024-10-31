@@ -55,13 +55,13 @@ public class BlacklistCommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "Blacklist closest block";
+        return "最近的黑名单区块";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "While going to a block this command blacklists the closest block so that Baritone won't attempt to get to it.",
+                "当进入一个区块时，此命令会将最近的区块列入黑名单，这样Baritone就不会尝试进入它。",
                 "",
                 "Usage:",
                 "> blacklist"
