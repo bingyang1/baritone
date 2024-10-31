@@ -66,19 +66,18 @@ public class ETACommand extends Command {
 
     @Override
     public String getShortDesc() {
-        return "View the current ETA";
+        return "查看当前预计到达时间";
     }
 
     @Override
     public List<String> getLongDesc() {
         return Arrays.asList(
-                "The ETA command provides information about the estimated time until the next segment.",
-                "and the goal",
+                "ETA命令提供有关到下一段和目标的估计时间的信息",
                 "",
-                "Be aware that the ETA to your goal is really unprecise",
+                "要知道，你的目标的预计到达时间真的很不精确",
                 "",
                 "Usage:",
-                "> eta - View ETA, if present"
+                "> eta - 查看预计到达时间（如果有）"
         );
     }
 }
